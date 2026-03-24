@@ -16,6 +16,13 @@ public class Aluno extends Usuario {
         return this.certificados.size();
     }
 
+    public void apresentarCertificados(){
+        System.out.println("Apresentando os certificados do aluno " + this.getNome());
+        for (Certificado certificado : certificados) {
+            certificado.toString();
+        }
+    }
+
     //Funções basicas, construtor full, construtor vazio, getters e setters, hashcode e equals e toString
     public Aluno() {
     }

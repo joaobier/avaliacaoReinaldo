@@ -10,7 +10,6 @@ public class Certificado {
     private Boolean foiAprovado;
 
     //Funções basicas, construtor full, construtor vazio, getters e setters, hashcode e equals e toString
-
     public Certificado() {
     }
 
@@ -110,11 +109,13 @@ public class Certificado {
     @Override
     public String toString() {
         return "{" +
+            "--------------------------------------------------------------------" +
             " tipo='" + getTipo() + "'" +
             ", tempoComtabilizado='" + getTempoComtabilizado() + "'" +
             ", momentoEnvio='" + getMomentoEnvio() + "'" +
             ", urlArquivo='" + getUrlArquivo() + "'" +
             ", foiAprovado='" + isFoiAprovado() + "'" +
+            "--------------------------------------------------------------------" +
             "}";
     }
     
