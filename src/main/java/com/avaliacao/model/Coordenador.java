@@ -6,17 +6,9 @@ public class Coordenador extends Usuario {
     
     private String numeroFuncionario;
 
-    public void avaliarCertificado(Certificado certificado){
+    public void avaliarCertificado(Certificado certificado, boolean avaliacao){
 
-        Scanner scanner = new Scanner(System.in);
-        certificado.toString();
-        String r;
-        System.out.println("Aprovar Certificado? Y/N");
-        r = scanner.next();
-        if(r.equals('Y')){
-            certificado.setFoiAprovado(true);
-        } else certificado.setFoiAprovado(false);
-        scanner.close();
+        certificado.setFoiAprovado(avaliacao);
 
     }
     
